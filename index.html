@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venus Pannu | Freedom in Chaos | Author, Ph.D., Actor</title>
+  <meta name="description" content="Venus Pannu - Author of Freedom in Chaos, Ph.D. University of Washington, Actor. From awareness to performance.">
+
+  <link rel="me" href="https://orcid.org/0009-0001-7009-9945">
+  <link rel="me" href="https://www.amazon.in/Freedom-Chaos-Journey-Distraction-Awareness-ebook/dp/B0F9YWCYC8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F8F5F0;
+      --light-green: #E8F0E3;
+      --dark-green: #1B3C2F;
+      --gold: #C9A961;
+      --white: #FFFFFF;
+      --text: #2C2C2C;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .quote { font-family: 'Cormorant Garamond', serif; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 30px; }
+  .nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      background: rgba(248,245,240,0.85); backdrop-filter: blur(12px);
+      padding: 18px 0; transition: 0.3s; border-bottom: 1px solid rgba(201,169,97,0.1);
+    }
+  .nav-content { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 22px; font-weight: 700; color: var(--dark-green); letter-spacing: 1px; }
+  .nav-links a { margin-left: 35px; text-decoration: none; color: var(--dark-green); font-weight: 500; font-size: 15px; transition: 0.3s; }
+  .nav-links a:hover { color: var(--gold); }
+  .hero {
+      min-height: 100vh; display: flex; align-items: center;
+      background: linear-gradient(135deg, var(--light-green) 0%, var(--cream) 60%, var(--white) 100%);
+      position: relative; overflow: hidden;
+    }
+  .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
+  .hero h1 { font-size: 90px; line-height: 1; color: var(--dark-green); margin-bottom: 20px; font-weight: 700; }
+  .tagline {
+      font-size: 16px; letter-spacing: 8px; color: var(--gold);
+      font-weight: 800; margin: 35px 0; text-transform: uppercase;
+    }
+  .subhead { font-size: 20px; color: #555; margin-bottom: 50px; font-weight: 300; max-width: 500px; }
+  .btn {
+      background: var(--dark-green); color: var(--white); padding: 16px 38px;
+      text-decoration: none; margin: 10px 15px 10px 0; display: inline-block;
+      font-weight: 600; border-radius: 2px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      font-size: 15px; letter-spacing: 0.5px;
+    }
+  .btn:hover { background: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 35px rgba(201,169,97,0.35); }
+  .btn-outline { background: transparent; border: 1.5px solid var(--dark-green); color: var(--dark-green); }
+  .hero-image img { width: 100%; border-radius: 4px; box-shadow: 0 30px 80px rgba(27,60,47,0.15); }
+  .section { padding: 140px 0; position: relative; }
+  .section-white { background: var(--white); }
+  .section-green { background: var(--light-green); }
+  .section h2 { font-size: 60px; color: var(--dark-green); margin-bottom: 25px; text-align: center; font-weight: 600; }
+  .section-subtitle { text-align: center; font-size: 18px; color: #666; margin-bottom: 90px; max-width: 650px; margin-left: auto; margin-right: auto; font-weight: 300; line-height: 1.7; }
+  .book-insight {
+      background: var(--white); padding: 50px; border-left: 4px solid var(--gold);
+      margin: 60px 0; box-shadow: 0 15px 50px rgba(0,0,0,0.04);
+    }
+  .book-insight .quote {
+      font-size: 26px; line-height: 1.6; color: var(--dark-green);
+      font-style: italic; margin-bottom: 15px; font-weight: 400;
+    }
+  .book-insight .cite { color: var(--gold); font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+  .story-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 100px; align-items: center; }
+  .story-text h3 { font-size: 42px; color: var(--dark-green); margin-bottom: 25px; line-height: 1.2; }
+  .story-text p { font-size: 17px; line-height: 1.9; margin-bottom: 22px; color: #444; font-weight: 300; }
+  .story-image img { width: 100%; border-radius: 2px; box-shadow: 0 25px 70px rgba(27,60,47,0.12); }
+  .book-showcase { display: grid; grid-template-columns: 420px 1fr; gap: 90px; align-items: center; }
+  .book-cover img {
+      width: 100%; box-shadow: 0 35px 90px rgba(27,60,47,0.18);
+      transform: perspective(1200px) rotateY(-8deg); transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  .book-cover:hover img { transform: perspective(1200px) rotateY(0deg) scale(1.02); }
+  .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 60px; }
+  .photo-grid img { width: 100%; border-radius: 2px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); transition: 0.4s; }
+  .photo-grid img:hover { transform: scale(1.03); }
+  .cred-badges { display: flex; flex-wrap: wrap; gap: 18px; margin: 50px 0; justify-content: center; }
+  .badge {
+      background: var(--white); border: 1px solid rgba(27,60,47,0.1); padding: 14px 28px;
+      border-radius: 30px; text-decoration: none; color: var(--dark-green);
+      font-weight: 600; transition: 0.4s; display: inline-flex; align-items: center; gap: 10px; font-size: 14px;
+    }
+  .badge:hover { background: var(--dark-green); color: var(--white); border-color: var(--dark-green); }
+  .footer { background: var(--dark-green); color: var(--cream); text-align: center; padding: 100px 20px; }
+  .footer-tagline { font-size: 48px; letter-spacing: 10px; font-weight: 800; color: var(--gold); margin-bottom: 40px; font-family: 'Inter', sans-serif; }
+    @media (max-width: 992px) {
+     .hero-grid, .story-grid, .book-showcase { grid-template-columns: 1fr; gap: 50px; }
+     .hero h1 { font-size: 64px; }
+     .section h2 { font-size: 44px; }
+     .photo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-content">
+      <div class="logo">VENUS PANNU</div>
+      <div class="nav-links">
+        <a href="#journey">Journey</a>
+        <a href="#book">Book</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#acting">Acting</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div data-aos="fade-right" data-aos-duration="1200">
+          <h1>VENUS<br>PANNU</h1>
+          <div class="tagline">UNTIL I PERFORM</div>
+          <p class="subhead">Ph.D. | Engineer | Author of *Freedom in Chaos* | Actor</p>
+          <a href="Venus_Pannu_Portfolio.pdf" class="btn">Download Full CV + Specs</a>
+          <a href="#book" class="btn btn-outline">Read The Book</a>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <img src="headshot1.jpg" alt="Venus Pannu">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="journey">
+    <div class="container">
+      <h2 data-aos="fade-up">The Journey</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        From systems to soul. From data to human truth. Inspired by *Into the Wild*.
+      </p>
+      <div class="story-grid">
+        <div class="story-text" data-aos="fade-right">
+          <h3>You weren’t born to impress.<br>You were born to express.</h3>
+          <p>Ph.D. from University of Washington. Engineer. Researcher. I followed the prescribed path — until the mask cracked.</p>
+          <p>Like Christopher McCandless, I learned that real freedom isn’t found in credentials or conformity. It’s found when you stop performing for the world and start performing from your truth.</p>
+          <div class="book-insight" data-aos="fade-up" data-aos-delay="200">
+            <div class="quote">The real you — raw, flawed, unfiltered — is where the gold is. But in this world, authenticity feels like rebellion.</div>
+            <div class="cite">— Freedom in Chaos</div>
+          </div>
+        </div>
+        <div class="story-image" data-aos="fade-left" data-aos-delay="300">
+          <img src="photo2.png" alt="Venus Pannu - Global Experience">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-green" id="book">
+    <div class="container">
+      <h2 data-aos="fade-up">*Freedom in Chaos*</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        A Journey from Distraction to Awareness
+      </p>
+      <div class="book-showcase">
+        <div class="book-cover" data-aos="zoom-in-right">
+          <img src="book-cover.png" alt="Freedom in Chaos by Venus Pannu">
+        </div>
+        <div data-aos="fade-left" data-aos-delay="200">
+          <h3>A Mirror, A Pause, A Compass</h3>
+          <p style="font-size:17px; line-height:1.9; margin-bottom:30px; color:#444;">
+            This is not just a book. It is a mirror, a pause, a compass for your inner wilderness. In a time where distraction is worshipped and noise is normal, you are holding a rebellion made of stillness.
+          </p>
+          <div class="book-insight" style="margin:40px 0;">
+            <div class="quote">You’re not broken — you’re brilliant. Every child isn’t a problem to fix. They’re a mystery to unfold.</div>
+            <div class="cite">— Freedom in Chaos</div>
+          </div>
+          <a href="https://www.amazon.in/Freedom-Chaos-Journey-Distraction-Awareness-ebook/dp/B0F9YWCYC8" class="btn">Buy on Amazon Kindle ₹369</a>
+          <a href="Venus_Pannu_Portfolio.pdf" class="btn btn-outline">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cream" id="gallery">
+    <div class="container">
+      <h2 data-aos="fade-up">Gallery</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Lived experience across New Zealand, Australia, US, India
+      </p>
+      <div class="photo-grid" data-aos="fade-up" data-aos-delay="200">
+        <img src="headshot1.jpg" alt="Venus Pannu Profile">
+        <img src="photo2.png" alt="Venus Pannu Outdoor">
+        <img src="photo3.jpg" alt="Venus Pannu Portrait">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="acting">
+    <div class="container" style="text-align:center;" data-aos="fade-up">
+      <h2>Acting</h2>
+      <p style="font-size:19px; max-width:750px; margin:0 auto 50px; line-height:1.8; color:#444;">
+        I don’t play characters. I understand them. My Ph.D. taught me how humans break. My book taught me how they heal. My life across 4 countries taught me how they hope.
+      </p>
+      <div class="book-insight" style="max-width:800px; margin:0 auto 50px; text-align:left;">
+        <div class="quote">We label children before we understand them. We rush them before we guide them. We compare them before we connect with them. And the damage runs deep.</div>
+        <div class="cite">— Freedom in Chaos</div>
+      </div>
+      <a href="Venus_Pannu_Portfolio.pdf" class="btn">Download Full Portfolio + Specs + Headshots</a>
+      <p style="margin-top:30px; color:#666; font-size:15px;">
+        Age Range, Voice, Languages, Location & Full Experience in PDF
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-green" id="contact">
+    <div class="container" style="text-align:center;" data-aos="fade-up">
+      <h2>Connect</h2>
+      <p style="font-size:18px; margin-bottom:40px; color:#555;">For casting, collaborations, speaking, and book inquiries</p>
+      <a href="mailto:Cyber.Folio.7@outlook.com" class="btn">Email Venus Pannu</a>
+      <div class="cred-badges" style="margin-top:60px;">
+        <a href="https://orcid.org/0009-0001-7009-9945" target="_blank" class="badge">ORCID: 0009-0001-7009-9945</a>
+        <a href="https://www.amazon.in/Freedom-Chaos-Journey-Distraction-Awareness-ebook/dp/B0F9YWCYC8" target="_blank" class="badge">Amazon Author Page</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-tagline" data-aos="zoom-in">UNTIL I PERFORM</div>
+    <p style="color:#999; font-size:14px; margin-top:30px;">© 2026 Venus Pannu | Ph.D. | Author | Actor</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true, offset: 80, easing: 'ease-out-cubic' });
+  </script>
+</body>
+</html>
